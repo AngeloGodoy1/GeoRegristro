@@ -1,41 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/bg_tierra">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mapa de Incidencias Guardadas"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="12dp" />
-
-    <!-- Fragmento del Mapa de Google que muestra los marcadores -->
-    <FrameLayout
+    <!-- Fondo con escala proporcional centerCrop (sin estirar) -->
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="12dp">
+        android:layout_height="match_parent"
+        android:src="@drawable/tierra"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no" />
 
-        <fragment
-            android:id="@+id/mapVer"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
+    <!-- Capa de difuminado/oscurecido al 60% -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9900122A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mapa de Incidencias Guardadas"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Fragmento del Mapa de Google que muestra los marcadores -->
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="12dp">
 
-    <Button
-        android:id="@+id/btnVolverMenu"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Volver al Menú Principal"
-        android:textColor="#FFFFFF"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            <fragment
+                android:id="@+id/mapVer"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnVolverMenu"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Volver al Menú Principal"
+            android:textColor="#FFFFFF"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    </LinearLayout>
+</FrameLayout>

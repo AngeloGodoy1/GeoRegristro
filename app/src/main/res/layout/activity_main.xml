@@ -38,17 +38,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Correo electrónico"
-            android:textColorHint="#CCCCCC"
-            app:boxBackgroundColor="#20FFFFFF"
-            app:boxStrokeColor="#FFFFFF"
-            app:hintTextColor="#FFFFFF"
+            android:textColorHint="#666666"
+            app:hintTextColor="#0B57D0"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
             android:layout_marginBottom="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,17 +60,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Contraseña"
-            android:textColorHint="#CCCCCC"
-            app:boxBackgroundColor="#20FFFFFF"
-            app:boxStrokeColor="#FFFFFF"
-            app:hintTextColor="#FFFFFF"
+            android:textColorHint="#666666"
+            app:hintTextColor="#0B57D0"
+            app:boxBackgroundColor="#FFFFFF"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusBottomEnd="8dp"
             android:layout_marginBottom="24dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
+                android:textSize="16sp"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 

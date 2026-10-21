@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta Azul Planeta Tierra -->
+    <color name="earth_blue_primary">#0B57D0</color>
+    <color name="earth_blue_on_primary">#FFFFFF</color>
+    <color name="earth_blue_container">#D3E3FD</color>
+    <color name="earth_blue_on_container">#041E49</color>
+
+    <color name="earth_cyan_secondary">#006874</color>
+    <color name="earth_cyan_container">#97F0FF</color>
+
+    <color name="earth_dark_primary">#A8C7FA</color>
+    <color name="earth_dark_container">#0842A0</color>
+
+    <color name="earth_background">#F8FBFF</color>
+    <color name="earth_surface">#F0F4F9</color>
 </resources>

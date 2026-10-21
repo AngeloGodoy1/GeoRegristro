@@ -1,7 +1,11 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.GeoRegristro" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Colores nocturnos para el tema Azul Planeta Tierra -->
+        <item name="colorPrimary">@color/earth_dark_primary</item>
+        <item name="colorOnPrimary">#002E69</item>
+        <item name="colorPrimaryContainer">@color/earth_dark_container</item>
+        <item name="colorOnPrimaryContainer">#D3E3FD</item>
+        <item name="android:statusBarColor">#041E49</item>
     </style>
 </resources>

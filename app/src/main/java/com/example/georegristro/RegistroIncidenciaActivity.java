@@ -134,7 +134,7 @@ public class RegistroIncidenciaActivity extends AppCompatActivity implements OnM
         db.collection("incidencias")
                 .add(incidencia)
                 .addOnSuccessListener(documentReference -> {
-                    Toast.makeText(RegistroIncidenciaActivity.this, "¡Incidencia guardada con éxito!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(RegistroIncidenciaActivity.this, "Incidencia Guardada", Toast.LENGTH_LONG).show();
                     finish();
                 })
                 .addOnFailureListener(e -> {

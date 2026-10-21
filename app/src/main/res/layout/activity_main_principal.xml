@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPrincipal">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panel Principal"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnRegistrarIncidencia"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Registrar Nueva Incidencia"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVerHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Historial de Incidencias"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVerMapa"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ver en Mapa"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Cerrar Sesión"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+</LinearLayout>

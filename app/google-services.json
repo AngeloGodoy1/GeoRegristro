@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "123456789012",
-    "project_id": "georegristro-placeholder",
-    "storage_bucket": "georegristro-placeholder.appspot.com"
+    "project_number": "524817087481",
+    "project_id": "georegristro-827f1e9b",
+    "storage_bucket": "georegristro-827f1e9b.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:123456789012:android:1234567890123456",
+        "mobilesdk_app_id": "1:524817087481:android:8ac1af2ba8de89c7381b28",
         "android_client_info": {
           "package_name": "com.example.georegristro"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyPlaceholderKeyForBuildPasses00"
+          "current_key": "AIzaSyByGJusoQCVs2lwO13bvPO1lQvdKh6tmfQ"
         }
       ],
       "services": {
